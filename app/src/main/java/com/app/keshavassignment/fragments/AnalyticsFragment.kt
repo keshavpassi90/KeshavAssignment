@@ -69,29 +69,44 @@ class AnalyticsFragment : Fragment() {
     }
 
     private fun handleCircleClick(clickedId: Int) {
-        // ⭐ Access views through the inventoryCard field on the binding object
+        // Correctly access views via the hierarchy:
         val stockCL = binding.stockCL
-        val nestedScrollView = binding.nestedScrollView // Assumes ID is set on NestedScrollView
+        val nestedScrollView = binding.nestedScrollView
+
+        // ⭐ FIX 1: Access the CardView container for a better starting point
+        val inventryCardContainer = binding.inventryCard
+
+        // ⭐ FIX 2: Get the toolbar view reference
+        val toolbarView = binding.customToolbarLayout.toolBarCL
+
+        // ⭐ FIX 3: Get the height using the standard Kotlin property access
+        val toolbarHeight = toolbarView.height // Use .height directly on the View reference
 
         // 1. Determine if we need to hide or toggle
         if (selectedCircleId == clickedId && stockCL.visibility == View.VISIBLE) {
             stockCL.visibility = View.GONE
             selectedCircleId = null
         } else {
-            // 2. Set the data source
+            // 2. Set the data source and show the list
             updateInventoryList(clickedId)
-
-            // 3. Make the list visible
             stockCL.visibility = View.VISIBLE
             selectedCircleId = clickedId
 
-            // 4. Smooth Scroll to the stockCL view
+            // 3. Smooth Scroll to the list container (stockCL) with offset
             stockCL.post {
-                // Scroll to the top position of stockCL relative to the NestedScrollView's content
-                binding.nestedScrollView.smoothScrollTo(0, stockCL.top)
+
+                // Calculate the position of stockCL relative to the inner ConstraintLayout:
+                // stockCL.top (offset from inventryCard) + inventryCardContainer.top (offset from ConstraintLayout)
+                val absoluteTargetY = inventryCardContainer.top + stockCL.top
+
+                // Adjust the scroll position by subtracting the toolbar height
+                val scrollTargetY = absoluteTargetY - toolbarHeight
+
+                nestedScrollView.smoothScrollTo(0, scrollTargetY)
             }
         }
     }
+
 
     private fun updateInventoryList(clickedId: Int) {
         // ⭐ Access nested views through inventoryCard and stockCL
