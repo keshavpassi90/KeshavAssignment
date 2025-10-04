@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_light">#7D7C7C</color>
+    <color name="app_color">#25616C</color>
+    <color name="gray">#DDE4E4</color>
+    <color name="dark_gray">#FF757575</color>
+    <color name="screen_back_color">#FAFDFC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_start">#4DB6AC</color>
+    <color name="teal_end">#91DEEB</color>
+
+
+    <color name="coral_orange">#F08080</color>
+    <color name="dark_teal">#008080</color>
+    <color name="light_gray">#F0F0F0</color>
+    <color name="medium_gray">#AAAAAA</color>
+
+        <color name="light_gray_bg">#F2F2F2</color>
+
+        <color name="red_error">#FF4081</color>
+        <color name="teal_light">#52C4D8</color>
+        <color name="teal_dark">#0097A7</color>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">KeshavAssignment</string>
+    <string name="finances">Finances</string>
+    <string name="tax_limit">Tax limit</string>
+    <string name="income">Income</string>
+    <string name="distributors">Distributors</string>
+    <string name="products">Products</string>
+    <string name="inventory">Inventory</string>
+    <string name="outcome">OutCome</string>
+    <string name="hide">Hide</string>
+    <string name="edit">Edit</string>
+    <string name="order">Order</string>
+    <string name="soon_out_of_stock">Soon out of stock:</string>
+    <string name="utilized">Utilized inventory:</string>
+    <string name="revision_needed">Revisions needed:</string>
+
+
+</resources>

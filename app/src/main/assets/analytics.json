@@ -1,0 +1,95 @@
+{
+    "finance": [
+        {
+            "tax_limit": 60,
+            "income": "1 175 200.00 〒",
+            "outcome": "1 005 300.00 〒",
+            "product": "778",
+            "distribution": "128"
+        },
+        {
+            "tax_limit": 30,
+            "income": "1 175 200.00 〒",
+            "outcome": "1 255 310.00 〒",
+            "product": "778",
+            "distribution": "128"
+        },
+        {
+            "tax_limit": 70,
+            "income": "1 175 200.00 〒",
+            "outcome": "1 105 310.00 〒",
+            "product": "778",
+            "distribution": "128"
+        },
+        {
+            "tax_limit": 20,
+            "income": "1 178 200.00 〒",
+            "outcome": "1 025 400.00 〒",
+            "product": "778",
+            "distribution": "128"
+        }
+    ],
+    "inventory": {
+        "utilized": [
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "10",
+                "Progress": "10"
+            },
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "2",
+                "Progress": "2"
+            },
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "5",
+                "Progress": "5"
+            }
+        ],
+        "soon_stock": [
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "10",
+                "Progress": "10"
+            },
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "3",
+                "Progress": "3"
+            },
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "6",
+                "Progress": "6"
+            },
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "4",
+                "Progress": "4"
+            },
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "8",
+                "Progress": "8"
+            },
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "3",
+                "Progress": "3"
+            }
+        ],
+        "revision_needed": [
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "10",
+                "Progress": "10"
+            },
+            {
+                "Heading": "Вода А`SU Stil негаз со вкусом мяты 0,5 л",
+                "amount_left": "9",
+                "Progress": "9"
+            }
+        ]
+    }
+}

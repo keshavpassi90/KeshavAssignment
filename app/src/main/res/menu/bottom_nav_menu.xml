@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cashierFragment"
+        android:icon="@drawable/ic_cashier"
+        android:title="Cashier" />
+
+    <item
+        android:id="@+id/procureFragment"
+        android:icon="@drawable/ic_procure"
+        android:title="Procure" />
+
+    <item
+        android:id="@+id/analyticsFragment"
+        android:icon="@drawable/ic_analytics"
+        android:title="Analytics" />
+
+    <item
+        android:id="@+id/optionsFragment"
+        android:icon="@drawable/ic_options"
+        android:title="Options" />
+</menu>

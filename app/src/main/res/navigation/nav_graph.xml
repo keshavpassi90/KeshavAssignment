@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/cashierFragment">
+
+    <fragment
+        android:id="@+id/cashierFragment"
+        android:name="com.app.keshavassignment.fragments.CashierFragment"
+        android:label="Cashier" />
+
+    <fragment
+        android:id="@+id/procureFragment"
+        android:name="com.app.keshavassignment.fragments.ProcureFragment"
+        android:label="Procure" />
+
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.app.keshavassignment.fragments.AnalyticsFragment"
+        android:label="Analytics" />
+
+    <fragment
+        android:id="@+id/optionsFragment"
+        android:name="com.app.keshavassignment.fragments.OptionsFragment"
+        android:label="Options" />
+
+</navigation>

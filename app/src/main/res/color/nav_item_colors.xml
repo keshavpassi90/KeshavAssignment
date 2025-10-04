@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file should be placed in the 'res/color' directory -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state: Use the user's defined app_color -->
+    <item android:color="@color/app_color" android:state_checked="true" />
+
+    <!-- Default (unselected) state: Use a neutral dark gray -->
+    <item android:color="@color/dark_gray" android:state_checked="false" />
+</selector>
